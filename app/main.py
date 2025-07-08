@@ -1,6 +1,5 @@
 import sys
 
-
 def main():
     if len(sys.argv) < 3:
         print("Usage: ./your_program.sh tokenize <filename>", file=sys.stderr)
