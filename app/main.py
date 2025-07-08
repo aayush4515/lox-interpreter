@@ -5,10 +5,9 @@ tokens = {"(" : "LEFT_PAREN",
           ")" : "RIGHT_PAREN"}
 
 def tokenize(file_contents):
-    # tokenize parenthesis
     for ch in file_contents:
         if ch in tokens:
-            print(f"{tokens[ch]} null")
+            print(f"{tokens[ch]} {ch} null")
     print("EOF null")
 
 def main():
