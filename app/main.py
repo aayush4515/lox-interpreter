@@ -2,7 +2,8 @@ import sys
 
 tokens = {}
 tokens = {"(" : "LEFT_PAREN",
-          ")" : "RIGHT_PAREN"}
+          ")" : "RIGHT_PAREN",
+          " " : "null"}
 
 def tokenize(file_contents):
     for ch in file_contents:
