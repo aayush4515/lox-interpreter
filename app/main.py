@@ -2,14 +2,13 @@ import sys
 
 tokens = {}
 tokens = {"(" : "LEFT_PAREN",
-          ")" : "RIGHT_PAREN",
-          " " : "null"}
+          ")" : "RIGHT_PAREN"}
 
 def tokenize(file_contents):
     for ch in file_contents:
         if ch in tokens:
             print(f"{tokens[ch]} {ch} null")
-    print("EOF null")
+    print("EOF  null")
 
 def main():
     if len(sys.argv) < 3:
